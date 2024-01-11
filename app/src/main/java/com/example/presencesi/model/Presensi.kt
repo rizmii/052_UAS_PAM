@@ -1,10 +1,10 @@
 package com.example.presencesi.model
 
 data class Presensi(
-    val id : String,
+    val NIM : String,
     val nama : String,
-    val waktu : String
+    val tanggal : String,
+    val keterangan : String
 ){
-    constructor(): this("","","")
+    constructor(): this("","","","")
 }
-
