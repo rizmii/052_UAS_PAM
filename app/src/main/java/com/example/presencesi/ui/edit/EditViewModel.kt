@@ -39,7 +39,7 @@ class EditViewModel(
         presensiUiState = presensiUiState.copy(addEvent = addEvent)
     }
 
-    suspend fun updateKontak() {
+    suspend fun updatePresensi() {
         repository.update(presensiUiState.addEvent.toPresensi())
 
     }

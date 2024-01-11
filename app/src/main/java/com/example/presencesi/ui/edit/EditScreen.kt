@@ -47,7 +47,7 @@ fun EditScreen(
             onPresensiValueChange = viewModel::updateUIState,
             onSaveClick = {
                 coroutineScope.launch {
-                    viewModel.updateKontak()
+                    viewModel.updatePresensi()
                     navigateBack()
                 }
             },
